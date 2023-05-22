@@ -34,8 +34,9 @@ export const userRegister = async (email,password, confirmpassword, name, firstn
     }
 }
 
-export const getAccount = async () =>{
+export const getAccount = async (jwt) =>{
     const url =  process.env.REACT_APP_API_URL+'/users/account';
-    const response = await axios.get(url);
+    const headers = {Authorization: `Bearer ${jwt}`};
+    const response = await axios.get(url, {headers});
     return response.data
 }
