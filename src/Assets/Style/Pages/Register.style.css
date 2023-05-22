@@ -1,0 +1,77 @@
+#Register {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Register-Title{
+    padding-left: 5%;
+}
+
+#Register-Title-Text{
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+#Register-Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#Register-Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: 50%;
+}
+
+#Register-Bottom-Text {
+    width: 50%;
+}
+
+#Register-Bottom-Button {
+    width: 100%;
+    font-size: medium;
+    color: #ffb703;
+    text-decoration: none;
+    border: 2px #ffb703 solid;
+    background-color: white;
+}
+
+#Register-Bottom-Button:active {
+    color: white;
+    border: none;
+    background-color: #023047;
+}
+
+#Register-Button-Back {
+    margin-top: 20px;
+    width: 100%;
+    font-size: medium;
+    color: #ffb703;
+    text-decoration: none;
+    border: 2px #ffb703 solid;
+    background-color: white;
+    height: 50px;
+}
+
+#Register-Button-Back:active {
+    color: white;
+    border: none;
+    background-color: #023047;
+}
+
+#Register-Back{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}

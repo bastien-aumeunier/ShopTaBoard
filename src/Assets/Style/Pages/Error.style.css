@@ -1,0 +1,14 @@
+#ErrorPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Text {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
