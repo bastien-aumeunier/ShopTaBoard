@@ -20,8 +20,6 @@ const ProfilePage = () => {
     const navigate = useNavigate();
 
     const getUser = async () => {
-        const resp = await getAccount(jwt)
-        setUser(resp)
         const respCommandes = await getAllOrders(jwt)
         for (let i = respCommandes.length; i >= 0 ; i--) {
             const element = respCommandes[i];
@@ -29,6 +27,8 @@ const ProfilePage = () => {
                 commandes.push(element)
             }
         }
+        const resp = await getAccount(jwt)
+        setUser(resp)
         setIsLoading(false)
     }
 
@@ -37,6 +37,7 @@ const ProfilePage = () => {
     }
     const logout = () => {
         setJwt("")
+        navigate('/')
     }
 
     useEffect(() => {
@@ -48,7 +49,7 @@ const ProfilePage = () => {
         } else {
             setIsLoading(false)
         }
-    },[user, jwt])
+    },[user])
 
     if(isLoading){
         return(
@@ -94,7 +95,6 @@ const ProfilePage = () => {
             </div>
         )
       }
-
 }
 
 export default ProfilePage;
