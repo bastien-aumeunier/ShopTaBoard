@@ -24,7 +24,6 @@ const RegisterForm = () => {
                     setError("Le mot de passe doit contenir au moins 8 caractères")
                 } else {
                     const resp = await userRegister(mail, password, passwordConfirm, nom, prenom)
-                    console.log(resp.status)
                     if (resp.status === 201) {
                         setJwt(resp.data.jwt)
                     } else if (resp.status === 400) {
