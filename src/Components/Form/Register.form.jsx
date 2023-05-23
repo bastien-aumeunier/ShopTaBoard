@@ -5,7 +5,7 @@ import { userRegister } from "../../Request/user.request";
 import '../../Assets/Style/Components/RegisterForm.style.css'
 
 const RegisterForm = () => {
-    const [jwt,setJwt] = useAtom(JWTAtom)
+    const [,setJwt] = useAtom(JWTAtom)
     const [prenom, setPrenom] = useState("")
     const [nom, setNom] = useState("")
     const [mail, setMail] = useState("");

@@ -8,6 +8,7 @@ import { createPayment } from "../Request/order.request";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import PaymentForm from "../Components/Form/Payment.form";
+import '../Assets/Style/Components/PaymentForm.style.css'
 
 const PaymentPage = () => {
     const navigate = useNavigate();
