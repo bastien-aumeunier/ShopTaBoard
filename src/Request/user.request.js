@@ -40,3 +40,21 @@ export const getAccount = async (jwt) =>{
     const response = await axios.get(url, {headers});
     return response.data
 }
+
+export const updatePassWord = async (jwt,oldPassword, newPassword, confirmNewPassword) =>{
+    try {
+        const url =  process.env.REACT_APP_API_URL+'/users/change-password';
+        const headers = {Authorization: `Bearer ${jwt}`};
+        const response = await axios.post(url, {oldPassword, newPassword, confirmNewPassword}, {headers});
+        return {
+            status: response.status,
+            data: response.data
+        }
+    } catch (error) {
+        return {
+            status: error.response.status,
+            data: error.response.data
+        }
+    }
+
+}
