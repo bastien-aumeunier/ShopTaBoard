@@ -23,10 +23,9 @@ const LoginForm = () => {
                 setError("Veuillez remplir tous les champs")
             } else if (resp.status === 403) {
                 setError("Email ou mot de passe incorrect")
-            } else if (resp.status === 200) {
-                setJwt(resp.jwt)
+            } else if (resp.status === 201) {
+                setJwt(resp.data.jwt)
             }
-            console.log(resp.status)
         }
     }
 
