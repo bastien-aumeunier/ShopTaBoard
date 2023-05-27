@@ -22,7 +22,7 @@ npm start
 
 ### Other Resources
 - Backend with NestJS : [here][back]
-- Mobile App withFlutter: [here][mobile]
+- Mobile App with Flutter: [here][mobile]
 
 [front]: http://baumeunier.fr:3000
 [mobile]: https://github.com/bastien-aumeunier/ShopTaBoard-Flutter
