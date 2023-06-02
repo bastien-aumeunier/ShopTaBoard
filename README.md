@@ -24,6 +24,6 @@ npm start
 - Backend with NestJS : [here][back]
 - Mobile App with Flutter: [here][mobile]
 
-[front]: http://baumeunier.fr:3000
+[front]: https://shoptaboard.baumeunier.me
 [mobile]: https://github.com/bastien-aumeunier/ShopTaBoard-Flutter
 [back]: https://github.com/bastien-aumeunier/back-ecommerce
