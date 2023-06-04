@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { useAtom } from 'jotai'
 import { JWTAtom, AddressIdAtom, CartAtom } from '../Utils/atom.utils'
 import Loader from './Loader.page'
-import NavBar from '../Components/NavBar/NavBar.jsx'
 import AddressForm from '../Components/Form/Address.form'
 import '../Assets/Style/Pages/Checkout.style.css'
 import HeaderCheckout from '../Components/Checkout/HeaderCheckout'
@@ -38,14 +37,12 @@ const CheckoutPage = () => {
 	if (isLoading) {
 		return (
 			<div>
-				<NavBar />
 				<Loader />
 			</div>
 		)
 	}
 	return (
 		<div id='Address'>
-			<NavBar />
 			<HeaderCheckout haveAddress={haveAddress} />
 			{addressId === '' ? (
 				<AddressForm update={formSend} />

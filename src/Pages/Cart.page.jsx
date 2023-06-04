@@ -4,7 +4,6 @@ import { useAtom } from 'jotai'
 import { JWTAtom, CartAtom } from '../Utils/atom.utils'
 import { getMyCart } from '../Request/cart.request'
 import Loader from './Loader.page'
-import NavBar from '../Components/NavBar/NavBar.jsx'
 import ProductOnCart from '../Components/Cart/ProductOnCart'
 import '../Assets/Style/Pages/Cart.style.css'
 import CartHeader from '../Components/Cart/CartHeader'
@@ -37,14 +36,12 @@ const CartPage = () => {
 	if (isLoading) {
 		return (
 			<div>
-				<NavBar />
 				<Loader />
 			</div>
 		)
 	}
 	return (
 		<div>
-			<NavBar />
 			<div id='Panier'>
 				<CartHeader price={cart.price} quantity={cart.products.length} />
 				<div id='Panier-List'>

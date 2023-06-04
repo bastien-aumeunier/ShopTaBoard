@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { useAtom } from 'jotai'
 import Loader from './Loader.page'
 import { JWTAtom } from '../Utils/atom.utils'
-import NavBar from '../Components/NavBar/NavBar.jsx'
 import '../Assets/Style/Pages/Profile.style.css'
 import { getAccount } from '../Request/user.request'
 import PassWordForm from '../Components/Form/PassWord.form'
@@ -53,14 +52,12 @@ const ProfilePage = () => {
 	if (isLoading) {
 		return (
 			<div>
-				<NavBar />
 				<Loader />
 			</div>
 		)
 	}
 	return (
 		<div>
-			<NavBar />
 			<div id='Profile'>
 				<div id='Profile-Title'>Bonjour {user.firstname}</div>
 				<div id='Profile-Content'>

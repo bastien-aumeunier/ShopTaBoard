@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import NavBar from '../Components/NavBar/NavBar'
 import Loader from './Loader.page'
 import { getProductById } from '../Request/product.request'
 import Image from '../Components/Image'
@@ -38,14 +37,12 @@ const DetailPage = () => {
 	if (isLoading) {
 		return (
 			<div>
-				<NavBar />
 				<Loader />
 			</div>
 		)
 	}
 	return (
 		<div>
-			<NavBar />
 			<div id='Header'>
 				<button id='Panier-Top-Button' onClick={() => navigate(-1)}>
 					<Image url={BackArrow} alt='BackArrow' width={30} height={30} />
