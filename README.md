@@ -11,7 +11,7 @@ npm start
 
 ## Testing
 
- You can test this app [here][front]
+You can test this app [here][front]
 
 ### Technologies Used
 
@@ -21,6 +21,7 @@ npm start
 - React-Router
 
 ### Other Resources
+
 - Backend with NestJS : [here][back]
 - Mobile App with Flutter: [here][mobile]
 
