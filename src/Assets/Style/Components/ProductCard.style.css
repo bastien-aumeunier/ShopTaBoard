@@ -1,31 +1,31 @@
 #Card2 {
-    margin: 20px 0px;
+	margin: 20px 0px;
 }
 
 #Card2:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    cursor: pointer;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	cursor: pointer;
 }
 
-#Card-Link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#Card-Link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #Card-Text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #Card-Text-Name {
-text-transform: capitalize;
+	text-transform: capitalize;
 }
 
-#Card-Button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 10px;
+#Card-Button {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 10px;
 }

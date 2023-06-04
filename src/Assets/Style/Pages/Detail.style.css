@@ -1,10 +1,10 @@
-#Detail{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
+#Detail {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-#Header{
-    margin-top: 70px;
-    margin-left: 50px;
+#Header {
+	margin-top: 70px;
+	margin-left: 50px;
 }

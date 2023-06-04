@@ -1,32 +1,32 @@
 .Page-Form-Input {
-    width: 50%;
-    height: 20%;
-    margin-bottom: 1%;    
+	width: 50%;
+	height: 20%;
+	margin-bottom: 1%;
 }
 
 #Page-Form-Button {
-    width: 50%;
-    height: 20%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-color: #ffb703;
-    border: none;
+	width: 50%;
+	height: 20%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color: #ffb703;
+	border: none;
 }
 
 #Page-Form-Button:active {
-    background-color: #023047;
-    color: white;
+	background-color: #023047;
+	color: white;
 }
 
-#RegisterForm{
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-    justify-content: center;
-    align-items: center;
+#RegisterForm {
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	justify-content: center;
+	align-items: center;
 }
 
-#Page-Form-Error{
-    color: red;
-    margin-bottom: 1%;
+#Page-Form-Error {
+	color: red;
+	margin-bottom: 1%;
 }

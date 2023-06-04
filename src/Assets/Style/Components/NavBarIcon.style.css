@@ -1,22 +1,22 @@
 #NavBar-Button {
-    border: none;
-    background-color: #023047;
+	border: none;
+	background-color: #023047;
 }
 
 #NavBar-Button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
-#NavBar-Cart-Quantity{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: #ffb703;
-    border-radius: 50px;
-    font-size: 12px;
-    padding-top: 1px;
-    padding-right: 1px;
-    bottom: 15px;
-    right: 17%;
-    color: #023047;
+#NavBar-Cart-Quantity {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: #ffb703;
+	border-radius: 50px;
+	font-size: 12px;
+	padding-top: 1px;
+	padding-right: 1px;
+	bottom: 15px;
+	right: 17%;
+	color: #023047;
 }

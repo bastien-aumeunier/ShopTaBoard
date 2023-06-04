@@ -1,17 +1,18 @@
-body,html {
-    padding: 0;
-    margin: 0;
+body,
+html {
+	padding: 0;
+	margin: 0;
 }
 
-#Address{
-    margin-top: 70px;
+#Address {
+	margin-top: 70px;
 }
 
-#Address-Valid{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
+#Address-Valid {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
 }

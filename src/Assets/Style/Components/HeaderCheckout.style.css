@@ -1,45 +1,45 @@
-#Address-Header{
-    margin-top: 80px;
+#Address-Header {
+	margin-top: 80px;
 }
 
 #Address-Top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-#Address-Top-Button{
-    margin-top: 10px;
-    background-color: white;
-    border: none;
+#Address-Top-Button {
+	margin-top: 10px;
+	background-color: white;
+	border: none;
 }
 
 #Address-Top-Title {
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #Address-Top-NextStep-Button {
-    background-color: #ffb703;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+	background-color: #ffb703;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 #Address-Top-NextStep-Button:active {
-    background-color: #023047;
-    color: white;
+	background-color: #023047;
+	color: white;
 }
 
-#Address-Top-NextStep-Button-Disable{
-    background-color: #ffb703;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
+#Address-Top-NextStep-Button-Disable {
+	background-color: #ffb703;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
 }
