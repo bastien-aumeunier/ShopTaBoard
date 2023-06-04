@@ -1,15 +1,15 @@
 body,
 html {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #Panier {
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 #Panier-List {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

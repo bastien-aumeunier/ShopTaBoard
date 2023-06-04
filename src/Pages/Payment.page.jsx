@@ -11,56 +11,56 @@ import PaymentForm from '../Components/Form/Payment.form'
 import '../Assets/Style/Components/PaymentForm.style.css'
 
 const PaymentPage = () => {
-	const navigate = useNavigate()
-	const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
+  const navigate = useNavigate()
+  const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY)
 
-	const [jwt] = useAtom(JWTAtom)
-	const [cart] = useAtom(CartAtom)
+  const [jwt] = useAtom(JWTAtom)
+  const [cart] = useAtom(CartAtom)
 
-	const [addressId] = useAtom(AddressIdAtom)
-	const [isLoading, setLoading] = useState(true)
-	const [StripeToken, setStripeToken] = useState('')
+  const [addressId] = useAtom(AddressIdAtom)
+  const [isLoading, setLoading] = useState(true)
+  const [StripeToken, setStripeToken] = useState('')
 
-	const getStripeToken = async () => {
-		const resp = await createPayment(jwt, cart.id, addressId)
-		setStripeToken(resp.clientSecret)
-		setLoading(false)
-	}
+  const getStripeToken = async () => {
+    const resp = await createPayment(jwt, cart.id, addressId)
+    setStripeToken(resp.clientSecret)
+    setLoading(false)
+  }
 
-	const appearance = {
-		theme: 'stripe'
-	}
+  const appearance = {
+    theme: 'stripe'
+  }
 
-	const options = {
-		clientSecret: StripeToken,
-		appearance
-	}
+  const options = {
+    clientSecret: StripeToken,
+    appearance
+  }
 
-	useEffect(() => {
-		if (jwt === '' || cart.id === '' || addressId === '') {
-			navigate('/')
-		} else if (StripeToken === '') {
-			getStripeToken()
-		} else {
-			setLoading(false)
-		}
-	}, [])
+  useEffect(() => {
+    if (jwt === '' || cart.id === '' || addressId === '') {
+      navigate('/')
+    } else if (StripeToken === '') {
+      getStripeToken()
+    } else {
+      setLoading(false)
+    }
+  }, [])
 
-	if (isLoading || StripeToken === '') {
-		return (
-			<div>
-				<NavBar />
-				<Loader />
-			</div>
-		)
-	}
-	return (
-		<div id='Paiement'>
-			<Elements options={options} stripe={stripePromise}>
-				<PaymentForm />
-			</Elements>
-		</div>
-	)
+  if (isLoading || StripeToken === '') {
+    return (
+      <div>
+        <NavBar />
+        <Loader />
+      </div>
+    )
+  }
+  return (
+    <div id='Paiement'>
+      <Elements options={options} stripe={stripePromise}>
+        <PaymentForm />
+      </Elements>
+    </div>
+  )
 }
 
 export default PaymentPage

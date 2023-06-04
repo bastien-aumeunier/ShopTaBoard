@@ -11,45 +11,45 @@ import RegisterPage from '../Pages/Register.page'
 import LayoutPage from '../Pages/LayoutPage'
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <LayoutPage />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				path: '',
-				element: <HomePage />
-			},
-			{
-				path: '/product/:id',
-				element: <DetailPage />
-			},
-			{
-				path: '/profile',
-				element: <ProfilePage />
-			},
-			{
-				path: '/cart',
-				element: <CartPage />
-			},
-			{
-				path: '/checkout-address',
-				element: <CheckoutPage />
-			}
-		]
-	},
-	{
-		path: '/login',
-		element: <LoginPage />
-	},
-	{
-		path: '/register',
-		element: <RegisterPage />
-	},
-	{
-		path: '/checkout-payment',
-		element: <PaymentPage />
-	}
+  {
+    path: '/',
+    element: <LayoutPage />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '',
+        element: <HomePage />
+      },
+      {
+        path: '/product/:id',
+        element: <DetailPage />
+      },
+      {
+        path: '/profile',
+        element: <ProfilePage />
+      },
+      {
+        path: '/cart',
+        element: <CartPage />
+      },
+      {
+        path: '/checkout-address',
+        element: <CheckoutPage />
+      }
+    ]
+  },
+  {
+    path: '/login',
+    element: <LoginPage />
+  },
+  {
+    path: '/register',
+    element: <RegisterPage />
+  },
+  {
+    path: '/checkout-payment',
+    element: <PaymentPage />
+  }
 ])
 
 export default router

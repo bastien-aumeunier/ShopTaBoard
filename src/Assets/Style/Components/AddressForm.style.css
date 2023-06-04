@@ -1,36 +1,36 @@
 #form {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 70vh;
-	align-items: center;
-	margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .Address-Form-Input {
-	width: 30%;
-	height: 20%;
-	margin-bottom: 1%;
+  width: 30%;
+  height: 20%;
+  margin-bottom: 1%;
 }
 
 #Address-Form-Button {
-	width: 30%;
-	height: 20%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	background-color: #ffb703;
-	border: none;
+  width: 30%;
+  height: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #ffb703;
+  border: none;
 }
 
 #Address-Form-Button:active {
-	background-color: #023047;
-	color: white;
+  background-color: #023047;
+  color: white;
 }
 
 #Address-Form-Radios {
-	display: flex;
-	flex-direction: row;
-	width: 30%;
-	justify-content: space-evenly;
-	margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
 }
