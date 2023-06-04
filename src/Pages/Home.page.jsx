@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCategory, getProductByCategory } from "../Request/product.request";
+import {getProductByCategory } from "../Request/product.request";
 import RowProduct from "../Components/RowProduct";
 import NavBar from "../Components/NavBar/NavBar.jsx";
 import '../Assets/Style/Global.style.css'
@@ -12,18 +12,8 @@ const HomePage = () => {
     const [isLoading, setIsLoading] = useState(true)
 
     const getAllCategory = async () => {
-        const resp =await getCategory()
-        resp.map(async (category)  => {
-          const products = await getProductByCategory(category.id)
-            setListCat((data) => [
-               ...data,
-               { 
-                 id: category.id,
-                 name: category.name,
-                 products: products
-               }
-             ]);
-           });
+        const resp =await getProductByCategory()
+        setListCat(resp)
     }
 
     useEffect(() => {

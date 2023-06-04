@@ -14,14 +14,8 @@ export const getProductById = async (id) => {
     return response.data;
 }
 
-export const getProductByCategory = async (id) => {
-    const url = process.env.REACT_APP_API_URL+`/products/category/${id}`;
-    const response = await axios.get(url);
-    return response.data;
-}
-
-export const getCategory = async () => {
-    const url = process.env.REACT_APP_API_URL+`/categories`;
+export const getProductByCategory = async () => {
+    const url = process.env.REACT_APP_API_URL+`/products/categories`;
     const response = await axios.get(url);
     return response.data;
 }
