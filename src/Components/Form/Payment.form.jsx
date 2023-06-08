@@ -52,7 +52,7 @@ const PaymentForm = () => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: 'http://localhost:3000/profile'
+        return_url: 'https://shoptaboard.baumeunier.me/profile'
       }
     })
 
